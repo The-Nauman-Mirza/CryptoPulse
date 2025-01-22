@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Home from "./pages/Home/Home";
 import Coin from "./pages/Coin/Coin";
 import SignUp from "./components/Signup/SignUp";
 import Login from "./components/Login/Login";
