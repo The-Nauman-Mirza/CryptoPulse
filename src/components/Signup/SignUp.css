@@ -1,0 +1,123 @@
+/* Signup Container */
+
+
+.signup-container {
+  height: 65vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #1a1a2e;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Form */
+.signup-form {
+  display: inline-block;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.signup-form h2 {
+  margin-bottom: 30px;
+  color: #639cdd;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #e3e3e3;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1a1a2e;
+  background: #e3e3e3;
+  outline: none;
+}
+
+/* Button */
+.signup-button {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 25%;
+  padding: 10px;
+  background-color: #00ff88;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  background-color: #00cc70;
+  transform: scale(1.05);
+}
+
+.signup-button:active {
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+      width: 75%;
+      height: 60vh;
+      padding: 20px;
+      top: 76%;
+  }
+
+  .signup-form h2 {
+      font-size: 24px;
+      padding-bottom: 15px;
+  }
+
+  .form-group input {
+      padding: 6px;
+      font-size: 13px;
+  }
+
+  .signup-button {
+      width: 70%;
+      margin-left: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+      padding: 15px;
+  }
+
+  .signup-form h2 {
+      font-size: 20px;
+  }
+
+  .signup-button {
+      width: 80%;
+      margin-left: 10%;
+  }
+}

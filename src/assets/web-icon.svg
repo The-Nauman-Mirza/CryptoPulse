@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -60 120 120">
+  <defs>
+    <!-- Main gold gradient -->
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#FFA500"/>
+    </linearGradient>
+    
+    <!-- Highlight gradient -->
+    <linearGradient id="highlight-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" style="stop-color:#FFFFFF" stop-opacity="0.1"/>
+    </linearGradient>
+    
+    <!-- Soft glow effect -->
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Main hexagon -->
+  <path d="M0,-50 L43.3,-25 L43.3,25 L0,50 L-43.3,25 L-43.3,-25 Z" 
+        fill="url(#gold-gradient)"
+        stroke="#FFD700"
+        stroke-width="2"/>
+  
+  <!-- Inner hexagon detail -->
+  <path d="M0,-30 L25,-15 L25,15 L0,30 L-25,15 L-25,-15 Z" 
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="1.5"
+        opacity="0.7"/>
+  
+  <!-- Additional geometric details -->
+  <path d="M0,-40 L0,-30 M0,30 L0,40 M-34.6,-20 L-25,-15 M34.6,-20 L25,-15 M-34.6,20 L-25,15 M34.6,20 L25,15" 
+        stroke="#FFFFFF"
+        stroke-width="1"
+        opacity="0.5"/>
+  
+  <!-- Center cryptocurrency symbol -->
+  <text x="0" y="8"
+        font-family="Arial, sans-serif"
+        font-size="24"
+        font-weight="bold"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        filter="url(#soft-glow)">
+    ₿
+  </text>
+  
+  <!-- Highlight overlay -->
+  <path d="M-43.3,-25 L0,-50 L43.3,-25" 
+        fill="none"
+        stroke="url(#highlight-gradient)"
+        stroke-width="2"
+        opacity="0.3"/>
+</svg>
