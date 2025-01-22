@@ -18,7 +18,6 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <Home />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />
@@ -27,6 +26,7 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+      <Home />
       {shouldShowFooter && <Footer />} {/* Conditionally render Footer */}
     </div>
   );
