@@ -18,6 +18,7 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
+      <Home />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />
