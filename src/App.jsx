@@ -16,10 +16,8 @@ const App = () => {
   const shouldShowFooter = !noFooterPaths.includes(location.pathname);
 
   return (
-    <>
     <div className="app">
       <Navbar/>
-      <Home/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />
@@ -30,7 +28,6 @@ const App = () => {
       </Routes>
       {shouldShowFooter && <Footer />} {/* Conditionally render Footer */}
     </div>
-    </>
   );
 };
 
