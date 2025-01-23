@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Coin from "./pages/Coin/Coin";
 import SignUp from "./components/Signup/SignUp";
@@ -31,16 +31,8 @@ const App = () => {
   );
 };
 
-const WrappedApp = () => {
-  return (
-    <Router basename="/">
-      <App />
-    </Router>
-  );
-};
 
-
-export default WrappedApp;
+export default App;
 
 
 
