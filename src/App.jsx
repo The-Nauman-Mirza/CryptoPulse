@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Coin from "./pages/Coin/Coin";
 import SignUp from "./components/Signup/SignUp";
@@ -17,9 +17,9 @@ const App = () => {
 
   return (
     <div className="app">
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Home/>
+        <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />
         <Route path="/coin/:coinId" element={<Coin />} />
         <Route path="/about" element={<About />} />
@@ -31,7 +31,16 @@ const App = () => {
   );
 };
 
-export default App;
+const WrappedApp = () => {
+  return (
+    <Router basename="/">
+      <App />
+    </Router>
+  );
+};
+
+
+export default WrappedApp;
 
 
 
