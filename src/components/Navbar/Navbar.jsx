@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {/* Navbar Links */}
       <ul>
-        <li onClick={() => { navigate('/') }}>Home</li>
+        <li>Home</li>
         <li onClick={() => { navigate('/features') }}>Features</li>
         <li>Pricing</li>
         <li onClick={() => { navigate('/about') }}>About</li>
