@@ -1,0 +1,116 @@
+
+.login-container {
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #1a1a2e;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form */
+.login-form{
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #639cdd;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 20px;
+}
+
+.loginform-group {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.loginform-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #e3e3e3;
+}
+
+.loginform-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1a1a2e;
+    background: #e3e3e3;
+    outline: none;
+}
+
+/* Button */
+.login-button {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 30%;
+    padding: 8px;
+    background-color: #00ff88;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #00cc70;
+    transform: scale(1.05);
+}
+
+.login-button:active {
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+        top: 72%;
+    }
+
+    .login-form h2 {
+        font-size: 24px;
+    }
+
+    .login-button {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        height: 100%;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    .login-button {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
